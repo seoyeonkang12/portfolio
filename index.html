@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+
+ <!------------- jquery ------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ <!------------- swiper ------------->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+ <!------------- gsap ------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
+ <!------------- gsap_ScrollTrigger ------------->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+  <script src="./js/mainGsap.js" defer></script>
+  <script src="./js/main.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+
+ <!------------- swiper ------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+  
+ <!------------- font ------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  
+
+  <style>
+    * {margin: 0; padding: 0;}
+    li {list-style: none;}
+    a {color: #D3D4D4; text-decoration: none;}
+    img {display: block; width: 100%; height: auto;}
+
+    html, body {font-family: Pretendard; font-size: 16px; color: #D3D4D4; background-color: #101217;}
+
+  </style>
+</head>
+<body>
+  <header class="header_outer">
+    <div class="header">
+      <div class="logo"><a href="#">KANG SEO YEON</a></div>
+      <ul class="gnb">
+        <li class="active"><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </header><!--header_outer-->
+  <section class="home_bg" id="home">
+    <div class="home">
+      <div class="clovers">
+        <div class="clover_01 clover">
+          <div class="cloverImg"><img src="./images/clover.png" alt="clover_img"></div>
+          <div class="txt_01 txt">
+            <p>01. USER EXPERIENCE</p>
+            <span>사용자의 입장에서 생각하고, 직관적이고 편리한 화면을 구현합니다.</span>
+          </div>
+        </div>
+        <div class="clover_02 clover">
+          <div class="cloverImg"><img src="./images/clover.png" alt="clover_img"></div>
+          <div class="txt_02 txt">
+            <p>02. PROBLEM SOLVING</p>
+            <span>문제를 단순히 해결하는 것에서 그치지 않고, 원인을 파악하고 더 나은 방법을 고민합니다.</span>
+          </div>
+        </div>
+        <div class="clover_03 clover">
+          <div class="cloverImg"><img src="./images/clover.png" alt="clover_img"></div>
+          <div class="txt_03 txt">
+            <p>03. CONTINUOUS GROWTH</p>
+            <span>새로운 기술을 배우고 직접 적용하며, 더 나은 결과를 만들어가는 과정을 중요하게 생각합니다.</span>
+          </div>
+        </div>
+      </div><!--clovers-->
+      <div class="main_txt">
+        <p>( KANG SEO YEON )</p>
+        <div class="pp_txt"><img src="./images/main.png" alt="portfolio_txt"></div>
+      </div>
+    </div>
+  </section><!--home_bg-->
+  <section class="profile_outer" id="about">
+    <div class="profile">
+      <div class="left_box">
+        <div class="myimg"><img src="./images/profile.jpg" alt="profile_img"></div>
+        <p>강서연</p>
+        <span>Front-End Developer</span>
+        <div class="my_info">
+          <p>Birth<span>2000.12.06</span></p>
+          <p>Email<span>kju1256@naver.com</span></p>
+          <p>Phone<span>010.7591.3363</span></p>
+          <p>Address<span>Busan, Korea</span></p>
+        </div>
+      </div><!--left_box-->
+      <div class="right_box">
+        <div class="profile_title">
+          <div class="b_title">
+            디자인과 기술을 <span>연결</span> 하는<br>개발자 <strong>강서연입니다!</strong>
+          </div>
+          <p>책임감 있는 마음을 가지고 주어진 역할을 제대로 수행하고 함께 소통하며 협업하는 개발자,<br>그리고 새로운 도전과 학습을 통해 끊임없이 전진하고 도전에 두려워하지 않으며, 계속해서<br>스스로를 발전시키는 개발자가 되겠습니다.</p>
+        </div>
+        <div class="info_01">
+          <div class="education">
+            <p>EDUCATION</p>
+            <div class="info">
+              <div class="date">
+                <p>2023.02</p>
+                <p>2021.02</p>
+                <p>2019.02</p>
+              </div>
+              <div class="exp">
+                <p>동서대학교 졸업</p>
+                <p>경남정보대학교 졸업</p>
+                <p>신선여자고등학교 졸업</p>
+              </div>
+            </div>
+          </div>
+          <div class="certificate">
+            <p>CERTIFICATE</p>
+            <div class="info">
+              <div class="date">
+                <p>2022.06</p>
+                <p>2021.10</p>
+                <p>2018.10</p>
+                <p>2018.09</p>
+              </div>
+              <div class="exp">
+                <p>GTQ 인디자인 1급</p>
+                <p>컴퓨터그래픽스운용기능사</p>
+                <p>GTQ 포토샵 1급</p>
+                <p>GTQ 일러스트 1급</p>
+              </div>
+            </div>
+          </div>
+        </div><!--info_01-->
+        <div class="info_02">
+          <p>EXPERIENCE</p>
+          <div class="info">
+            <p>2023.08 ~ 2024.08</p>
+            <div class="exp">
+              <p>잇프로젝트 디자인팀</p>
+              <span>반응형 홈페이지 디자인 ㅣ 유지보수 및 관리</span>
+              <div class="skill"></div>
+              <div class="work_btn"><i class="fa-solid fa-chevron-down"></i>주요 업무 내용 보기</div>
+              <div class="work_txt">
+                <p>• 고객 니즈를 반영한 맞춤형 디자인 제작/수정 및 관리</p>
+                <p>• Web/Mobile 반응형 UI 퍼블리싱</p>
+                <p>• 홈페이지 유지보수 및 관리</p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <p>2021.12</p>
+            <div class="exp">
+              <p>BECOOKS 2등 수상</p>
+              <span class="becooks">* 협력기반 공동 프로그램 시상식</span>
+            </div>
+          </div>
+        </div><!--info_02-->
+        <div class="skills">
+          <p>SKILLS</p>
+          <div class="skill_box">
+            <p>편해요</p>
+            <div class="skill">
+              <div>
+                <img src="./images/html.png" alt="html_img" class="normal_img">
+                <img src="./images/html_h.png" alt="html_hover_img" class="hover_img">
+                <p>HTML5</p>
+                <div class="txt">
+                   <p>HTML5</p>
+                   <span>웹 표준 및 접근성을 준수하는 시맨틱 마크업 설계</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/css.png" alt="css_img" class="normal_img">
+                <img src="./images/css_h.png" alt="css_hover_img" class="hover_img">
+                <p>CSS3</p>
+                <div class="txt">
+                   <p>CSS3</p>
+                   <span>Flex 및 Grid를 활용한 반응형 웹 레이아웃 구현</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/sass.png" alt="sass_img" class="normal_img sass">
+                <img src="./images/sass_h.png" alt="sass_hover_img" class="hover_img sass">
+                <p>Sass</p>
+                <div class="txt">
+                   <p>Sass</p>
+                   <span>모듈화 및 Mixin을 활용한 체계적인 스타일 관리</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/ai.png" alt="ai_img" class="normal_img">
+                <img src="./images/ai_h.png" alt="ai_hover_img" class="hover_img">
+                <p>Illustration</p>
+                <div class="txt">
+                   <p>Illustration</p>
+                   <span>아이콘 및 로고 등 확장 가능한 고품질 벡터 그래픽 제작</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/ps.png" alt="ps_img" class="normal_img">
+                <img src="./images/ps_h.png" alt="ps_hover_img" class="hover_img">
+                <p>Photoshop</p>
+                <div class="txt">
+                   <p>Photoshop</p>
+                   <span>정밀한 이미지 보정 및 웹 최적화 에셋 가공</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/id.png" alt="id_img" class="normal_img">
+                <img src="./images/id_h.png" alt="id_hover_img" class="hover_img">
+                <p>Indesign</p>
+                <div class="txt">
+                   <p>Indesign</p>
+                   <span>그리드 기반의 균형 잡힌 레이아웃 디자인 및 인쇄물 편집</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/figma.png" alt="figma_img" class="normal_img">
+                <img src="./images/figma_h.png" alt="figma_hover_img" class="hover_img">
+                <p>Figma</p>
+                <div class="txt">
+                   <p>Figma</p>
+                   <span>컴포넌트 기반의 디자인 시스템 구축 및 프로토타입 제작</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill_box">
+            <p>어느정도 사용할 수 있어요</p>
+            <div class="skill second">
+              <div class="js">
+                <img src="./images/js.png" alt="js_img" class="normal_img">
+                <img src="./images/js_h.png" alt="js_hover_img" class="hover_img">
+                <p>Java Script</p>
+                <div class="txt">
+                   <p>Java Script</p>
+                   <span>ES6+ 기반의 동적 DOM 제어 및 비동기 데이터 처리</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/react.png" alt="react_img" class="normal_img react">
+                <img src="./images/react_h.png" alt="react_hover_img" class="hover_img react">
+                <p>React</p>
+                <div class="txt">
+                   <p>React</p>
+                   <span>컴포넌트 기반의 UI 구현 및 효율적인 상태 관리</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/github.png" alt="github_img" class="normal_img">
+                <img src="./images/github_h.png" alt="github_hover_img" class="hover_img">
+                <p>Github</p>
+                <div class="txt">
+                   <p>Github</p>
+                   <span>Git-flow를 활용한 협업 및 효율적인 소스코드 버전 관리</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/jquery.png" alt="jquery_img" class="normal_img">
+                <img src="./images/jquery_h.png" alt="jquery_hover_img" class="hover_img">
+                <p>JQuery</p>
+                <div class="txt">
+                   <p>JQuery</p>
+                   <span>라이브러리를 활용한 직관적인 UI 인터랙션 구현</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/node.png" alt="node_img" class="normal_img">
+                <img src="./images/node_h.png" alt="node_hover_img" class="hover_img">
+                <p>Node.js</p>
+                <div class="txt">
+                   <p>Node.js</p>
+                   <span>Express를 활용한 기초적인 백엔드 API 서버 구축</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/json.png" alt="json_img" class="normal_img">
+                <img src="./images/json_h.png" alt="json_hover_img" class="hover_img">
+                <p>Json</p>
+                <div class="txt">
+                   <p>Json</p>
+                   <span>REST API 환경에서의 클라이언트-서버 간 데이터 송수신</span>
+                </div>
+              </div>
+              <div>
+                <img src="./images/sql.png" alt="sql_img" class="normal_img">
+                <img src="./images/sql_h.png" alt="sql_hover_img" class="hover_img">
+                <p>MySQL</p>
+                <div class="txt">
+                   <p>MySQL</p>
+                   <span>관계형 데이터베이스 구조 이해 및 기본 CRUD 쿼리 작성</span>
+                </div>
+              </div>
+              <div class="gsap">
+                <img src="./images/gsap.png" alt="gsap_img" class="normal_img gsap">
+                <img src="./images/gsap_h.png" alt="gsap_hover_img" class="hover_img gsap">
+                <p>Gsap</p>
+                <div class="txt">
+                   <p>Gsap</p>
+                   <span>타임라인 기반의 정교하고 매끄러운 웹 애니메이션 구현</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--skills-->
+      </div><!--right_box-->
+    </div><!--profile-->
+  </section><!--profile_outer-->
+  <section class="projects" id="projects">
+    <div class="title">
+      <div>PROJECTS</div>
+      <p>현재까지 개발한 프로젝트들로, 프로젝트를 클릭하면 자세히 볼 수 있습니다.</p>
+    </div>
+    <div class="projects_logo">
+      <div class="mova active">
+        <img src="./images/mova_logo.png" alt="mova_img" class="before_img">
+        <img src="./images/mova_h.png" alt="mova_hover_img" class="hover">
+      </div>
+      <div class="line"></div>
+      <div class="better">
+        <img src="./images/better_logo.png" alt="better_img" class="before_img">
+        <img src="./images/better_h.png" alt="better_hover_img" class="hover">
+      </div>
+      <div class="line"></div>
+      <div class="jeju">
+        <img src="./images/jeju_logo.png" alt="jeju_img" class="before_img">
+        <img src="./images/jeju_h.png" alt="jeju_hover_img" class="hover">
+      </div>
+      <div class="line"></div>
+      <div class="hanwha">
+        <img src="./images/hanwha_logo.png" alt="hanwha_img" class="before_img">
+        <img src="./images/hanwha_h.png" alt="hanwha_hover_img" class="hover">
+      </div>
+      <div class="line"></div>
+      <div class="daiso">
+        <img src="./images/daiso_logo.png" alt="daiso_img" class="before_img">
+        <img src="./images/daiso_h.png" alt="daiso_hover_img" class="hover">
+      </div>
+    </div>
+    <div class="swiper_outer">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide active">
+            <div class="slide_txt">
+              <div class="span_box">
+                <span>#App</span>
+                <span>#UI/UX</span>
+              </div>
+              <div class="slide_logo mova_d"><img src="./images/mova_logo.png" alt="logo_img"></div>
+              <p>운동용품 추천 APP</p>
+              <p class="slide_info">사용자의 체형과 운동 취향, 목적에 맞는<br>운동 용품을 추천해주는 어플리케이션입니다.</p>
+              <div class="info_box02">
+              <div class="first">
+                <p>ROLE</p>
+                <p>DATE</p>
+                <p>PAGE</p>
+              </div>
+              <div class="second_txt">
+                <p>개인 프로젝트</p>
+                <p>2026.04 - 2026.04(1주)</p>
+                <p>홈, 추천, 카테고리, 커뮤니티, 마이페이지</p>
+              </div>
+              </div>
+              <div class="skill_do">
+              <img src="./images/ps_h.png" alt="ps_img">
+              <img src="./images/figma_h.png" alt="figma_img">
+              </div>
+              <div class="btn_box">
+              <button>기획서 보기</button>
+              <button>Figma 프로토타입 보기</button>
+              </div>
+            </div><!--slide_txt-->
+            <div class="slide_project">
+              <img src="./images/mova.jpg" alt="project_img">
+            </div>
+          </div><!--mova_slide-->
+          <div class="swiper-slide">
+            <div class="slide_txt">
+              <div class="span_box">
+                <span>#Web</span>
+                <span>#Mobile</span>
+                <span>#Adaptive</span>
+              </div>
+              <div class="slide_logo better_d"><img src="./images/better_logo.png" alt="logo_img"></div>
+              <p>화장품 쇼핑몰 홈페이지</p>
+              <p class="slide_info">사용자의 취향과 퍼스널 컬러에 맞는 뷰티를<br>발견할 수 있는 개인화 뷰티 플랫폼 홈페이지입니다.</p>
+              <div class="info_box02">
+              <div class="first">
+                <p>ROLE</p>
+                <p>DATE</p>
+                <p>PAGE</p>
+              </div>
+              <div class="second_txt">
+                <p>개인 프로젝트</p>
+                <p>2026.05 - 2026.06(2주)</p>
+                <p>Main, Sub, Detail, Login, Join, Cart</p>
+              </div>
+              </div>
+              <div class="skill_do">
+              <img src="./images/html_h.png" alt="html_img">
+              <img src="./images/css_h.png" alt="css_img">
+              <img src="./images/js_h.png" alt="js_img">
+              <img src="./images/jquery_h.png" alt="jquery_img">
+              <img src="./images/json_h.png" alt="json_img">
+              <img src="./images/sql_h.png" alt="sql_img">
+              <img src="./images/ps_h.png" alt="ps_img">
+              <img src="./images/figma_h.png" alt="figma_img">
+              </div>
+              <div class="btn_box">
+              <button><a href="./images/better_proposal.pdf" target="_blank"></a>기획서 보기</button>
+              <button><a href="https://seoyeonkang.dothome.co.kr/" target="_blank">홈페이지 보기</a></button>
+              <button>Github 보기</button>
+              </div>
+            </div><!--slide_txt-->
+            <div class="slide_project">
+              <img src="./images/better.jpg" alt="project_img">
+            </div>
+          </div><!--better_slide-->
+          <div class="swiper-slide">
+            <div class="slide_txt">
+              <div class="span_box">
+                <span>#Web</span>
+                <span>#Tablet</span>
+                <span>#Mobile</span>
+                <span>#Responsive</span>
+              </div>
+              <div class="slide_logo jeju_d"><img src="./images/jeju_logo.png" alt="logo_img"></div>
+              <p>비짓제주 홈페이지 리뉴얼</p>
+              <p class="slide_info">제주도의 장소, 축제, 문화 등을 적극적으로 홍보하여<br>관광객유치를 높이기위해 리뉴얼한 홈페이지입니다.</p>
+              <div class="info_box02">
+              <div class="first">
+                <p>ROLE</p>
+                <p>DATE</p>
+                <p>PAGE</p>
+              </div>
+              <div class="second_txt">
+                <p>개인 프로젝트</p>
+                <p>2026.07 - 2026.07(2주)</p>
+                <p>Main, Sub</p>
+              </div>
+              </div>
+              <div class="skill_do">
+              <img src="./images/html_h.png" alt="html_img">
+              <img src="./images/js_h.png" alt="js_img">
+              <img src="./images/sass_h.png" alt="sass_img">
+              <img src="./images/jquery_h.png" alt="jquery_img">
+              <img src="./images/ps_h.png" alt="ps_img">
+              <img src="./images/figma_h.png" alt="figma_img">
+              </div>
+              <div class="btn_box">
+              <button>기획서 보기</button>
+              <button><a href="https://seoyeonkang12.github.io/Responsive_web/" target="_blank">홈페이지 보기</a></button>
+              <button>Github 보기</button>
+              </div>
+            </div><!--slide_txt-->
+            <div class="slide_project">
+              <img src="./images/jeju.jpg" alt="project_img">
+            </div>
+          </div><!--jeju_slide-->
+          <div class="swiper-slide">
+            <div class="slide_txt">
+              <div class="span_box">
+                <span>#Web</span>
+                <span>#Promotion</span>
+              </div>
+              <div class="slide_logo hanwha_d"><img src="./images/hanwha_logo.png" alt="logo_img"></div>
+              <p>서울세계불꽃축제 프로모션 사이트</p>
+              <p class="slide_info">불꽃축제라는 콘텐츠를 ‘서울의 밤과 빛’이라는<br>새로운 시각으로 재해석한 프로모션 사이트입니다.</p>
+              <div class="info_box02">
+              <div class="first">
+                <p>ROLE</p>
+                <p>DATE</p>
+                <p>PAGE</p>
+              </div>
+              <div class="second_txt">
+                <p>개인 프로젝트</p>
+                <p>2026.09 - 2026.09(3일)</p>
+                <p>Main</p>
+              </div>
+              </div>
+              <div class="skill_do">
+              <img src="./images/html_h.png" alt="html_img">
+              <img src="./images/sass_h.png" alt="sass_img">
+              <img src="./images/jquery_h.png" alt="jquery_img">
+              <img src="./images/gsap_h.png" alt="gsap_img">
+              <img src="./images/ps_h.png" alt="ps_img">
+              <img src="./images/figma_h.png" alt="figma_img">
+              </div>
+              <div class="btn_box">
+              <button>기획서 보기</button>
+              <button><a href="https://seoyeonkang12.github.io/promotion_web/" target="_blank">홈페이지 보기</a></button>
+              <button>Github 보기</button>
+              </div>
+            </div><!--slide_txt-->
+            <div class="slide_project">
+              <img src="./images/hanwha.jpg" alt="project_img">
+            </div>
+          </div><!--hanwha_slide-->
+          <div class="swiper-slide">
+            <div class="slide_txt">
+              <div class="span_box">
+                <span>#Web</span>
+                <span>#React</span>
+              </div>
+              <div class="slide_logo daiso_d"><img src="./images/daiso_logo.png" alt="logo_img"></div>
+              <p>다이소 리뉴얼 사이트</p>
+              <p class="slide_info">다이소 사이트 기존의 복잡함을 개선하고, 새로운 상품을<br>발견하는 재미를 제공하기 위해 리뉴얼한 사이트입니다.</p>
+              <div class="info_box02">
+              <div class="first">
+                <p>ROLE</p>
+                <p>DATE</p>
+                <p>PAGE</p>
+              </div>
+              <div class="second_txt">
+                <p>개인 프로젝트</p>
+                <p>2026.09 - 2026.09(1주)</p>
+                <p>Main, Sub, Detail, login, Cart, Wish</p>
+              </div>
+              </div>
+              <div class="skill_do">
+              <img src="./images/html_h.png" alt="html_img">
+              <img src="./images/css_h.png" alt="css_img">
+              <img src="./images/js_h.png" alt="js_img">
+              <img src="./images/react_h.png" alt="react_img">
+              <img src="./images/node_h.png" alt="node_img">
+              <img src="./images/ps_h.png" alt="ps_img">
+              <img src="./images/figma_h.png" alt="figma_img">
+              </div>
+              <div class="btn_box">
+              <button>기획서 보기</button>
+              <button><a href="https://seoyeonkang12.github.io/daiso_web/" target="_blank">홈페이지 보기</a></button>
+              <button>Github 보기</button>
+              </div>
+            </div><!--slide_txt-->
+            <div class="slide_project">
+              <img src="./images/daiso.jpg" alt="project_img">
+            </div>
+          </div><!--daiso_slide-->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section><!--projects-->
+  <div class="container">
+    <section class="contact" id="contact">
+      <div class="contact_txt">
+        <div class="hope">함께 일하고 싶은 동료,<br>함께 성장하는 개발자가 되겠습니다</div>
+        <div class="hope_02">혼자 잘하는 개발자보다 함께 성장하는 개발자가 되어,<br>좋은 코드와 좋은 협업을 함께 만들어가겠습니다.</div>
+        <p>010.7591.3363</p>
+        <p>kju1256@naver.com</p>
+      </div>
+      <div class="contact_clover">
+        <img src="./images/clover.png" alt="clover_img">
+        <img src="./images/clover.png" alt="clover_img">
+        <img src="./images/clover.png" alt="clover_img">
+      </div>
+    </section><!--contact-->
+    <footer class="footer">
+      Copyright © 2026 by KANG SEO YEON. All rights reserved.
+    </footer>
+  </div><!--container-->
+</body>
+</html>

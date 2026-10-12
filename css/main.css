@@ -1,0 +1,809 @@
+/**************** common ****************/
+/**************** header ****************/
+.header_outer {
+  background-color: rgba(211, 212, 212, 0.15);
+  backdrop-filter: blur(5px);
+  width: calc(100% - 160px);
+  margin: 30px auto 0;
+  border-radius: 100px;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.header_outer .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_outer .header .logo a {
+  font-family: "Red Rose", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #D3D4D4;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+.header_outer .header .gnb {
+  display: flex;
+  gap: 10px;
+}
+.header_outer .header .gnb li {
+  background-color: transparent;
+  border-radius: 30px;
+  width: 140px;
+  height: 36px;
+  text-align: center;
+  transition: all 0.2s;
+}
+.header_outer .header .gnb li a {
+  display: block;
+  font-size: 16px;
+  line-height: 36px;
+  color: #D3D4D4;
+  font-family: "Red Rose", serif;
+  font-weight: 400;
+  transition: all 0.2s;
+  color: #D3D4D4;
+  letter-spacing: 0.2px;
+}
+.header_outer .header .gnb li:hover {
+  background-color: #D3D4D4;
+}
+.header_outer .header .gnb li:hover a {
+  color: #101217;
+  font-weight: 500;
+}
+.header_outer .header .gnb li.active {
+  background-color: #D3D4D4;
+}
+.header_outer .header .gnb li.active a {
+  color: #101217;
+  font-weight: 500;
+}
+
+/**************** home ****************/
+.home_bg {
+  background: linear-gradient(#444A57, #101217);
+  height: 100vh;
+}
+.home_bg .home .clovers {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+}
+.home_bg .home .clovers .clover {
+  position: relative;
+}
+.home_bg .home .clovers .clover:hover .txt {
+  opacity: 1;
+  display: block;
+}
+.home_bg .home .clovers .cloverImg {
+  width: 50px;
+  opacity: 0.1;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.home_bg .home .clovers .cloverImg:hover {
+  opacity: 1;
+}
+.home_bg .home .clovers .txt {
+  background-color: #D3D4D4;
+  border-radius: 10px;
+  width: 330px;
+  padding: 20px 20px;
+  position: absolute;
+  opacity: 0;
+  display: none;
+  transition: all 0.2s;
+}
+.home_bg .home .clovers .txt p {
+  font-size: 18px;
+  color: #101217;
+  font-weight: 700;
+  font-family: "Red Rose", serif;
+  margin-bottom: 10px;
+  letter-spacing: 0.2px;
+}
+.home_bg .home .clovers .txt span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #101217;
+  line-height: 22px;
+}
+.home_bg .home .clovers .txt_01 {
+  top: -60%;
+  right: 50%;
+  transform: translateX(-20%);
+}
+.home_bg .home .clovers .txt_01::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 30px;
+  top: 35%;
+  right: -14px;
+  background-color: #D3D4D4;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+.home_bg .home .clovers .txt_02 {
+  bottom: 165%;
+  left: 50%;
+  transform: translateX(-51%);
+}
+.home_bg .home .clovers .txt_02::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 16px;
+  bottom: -14px;
+  right: 45%;
+  background-color: #D3D4D4;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+.home_bg .home .clovers .txt_03 {
+  top: -60%;
+  left: 50%;
+  transform: translateX(20%);
+}
+.home_bg .home .clovers .txt_03::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 30px;
+  top: 35%;
+  left: -14px;
+  background-color: #D3D4D4;
+  clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+}
+.home_bg .home .main_txt {
+  width: calc(100% - 140px);
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: visible;
+}
+.home_bg .home .main_txt p {
+  font-size: 50px;
+  font-family: "Red Rose", serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+.home_bg .home .main_txt .pp_txt img {
+  width: 100%;
+}
+
+/**************** profile ****************/
+.profile_outer {
+  margin: 30px auto;
+  padding-top: 170px;
+}
+.profile_outer .profile {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.profile_outer .profile .left_box {
+  position: sticky;
+  top: 150px;
+  width: 420px;
+  margin-right: 120px;
+}
+.profile_outer .profile .left_box .myimg {
+  width: 420px;
+  margin-bottom: 30px;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+.profile_outer .profile .left_box .myimg img {
+  border-radius: 30px;
+}
+.profile_outer .profile .left_box .myimg:hover {
+  filter: grayscale(0%);
+}
+.profile_outer .profile .left_box > p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #D3D4D4;
+  margin-bottom: 10px;
+}
+.profile_outer .profile .left_box > span {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Red Rose", serif;
+  margin-bottom: 50px;
+  display: block;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .left_box .my_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profile_outer .profile .left_box .my_info p {
+  color: rgba(211, 212, 212, 0.6);
+  font-size: 16px;
+  font-family: "Red Rose", serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .left_box .my_info p span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Red Rose", serif;
+  margin: 0 30px 0 15px;
+  color: #D3D4D4;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .right_box .profile_title {
+  margin-bottom: 90px;
+}
+.profile_outer .profile .right_box .profile_title .b_title {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.profile_outer .profile .right_box .profile_title .b_title span {
+  color: #101217;
+  background-color: #D3D4D4;
+  padding: 0 6px;
+}
+.profile_outer .profile .right_box .profile_title p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.profile_outer .profile .right_box .info_01 {
+  display: flex;
+  margin-bottom: 80px;
+}
+.profile_outer .profile .right_box .info_01 .education {
+  margin-right: 100px;
+}
+.profile_outer .profile .right_box .info_01 p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #D3D4D4;
+  font-family: "Red Rose", serif;
+  margin-bottom: 30px;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .right_box .info_01 .info {
+  display: flex;
+}
+.profile_outer .profile .right_box .info_01 .info .date {
+  margin-right: 50px;
+}
+.profile_outer .profile .right_box .info_01 .info .date p {
+  font-size: 18px;
+  color: rgba(211, 212, 212, 0.7);
+  font-family: "Red Rose", serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .right_box .info_01 .info .date p:last-child {
+  margin-bottom: 0;
+}
+.profile_outer .profile .right_box .info_01 .info .exp p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #D3D4D4;
+  margin-bottom: 20px;
+  font-family: Pretendard;
+}
+.profile_outer .profile .right_box .info_01 .info .exp p:last-child {
+  margin-bottom: 0;
+}
+.profile_outer .profile .right_box .info_02 p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #D3D4D4;
+  font-family: "Red Rose", serif;
+  margin-bottom: 30px;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .right_box .info_02 .info {
+  display: flex;
+  margin-bottom: 50px;
+}
+.profile_outer .profile .right_box .info_02 .info:last-child {
+  margin-bottom: 80px;
+}
+.profile_outer .profile .right_box .info_02 .info > p {
+  font-size: 18px;
+  color: rgba(211, 212, 212, 0.7);
+  font-family: "Red Rose", serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  line-height: 20px;
+  width: 40%;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .right_box .info_02 .info > p:last-child {
+  margin-bottom: 0;
+}
+.profile_outer .profile .right_box .info_02 .info .exp {
+  width: 100%;
+}
+.profile_outer .profile .right_box .info_02 .info .exp > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #D3D4D4;
+  margin-bottom: 8px;
+  font-family: Pretendard;
+  font-weight: 500;
+}
+.profile_outer .profile .right_box .info_02 .info .exp > p:last-child {
+  margin-bottom: 0;
+}
+.profile_outer .profile .right_box .info_02 .info .exp span {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  display: block;
+  color: rgba(211, 212, 212, 0.8);
+}
+.profile_outer .profile .right_box .info_02 .info .exp span.becooks {
+  color: #F99E26;
+}
+.profile_outer .profile .right_box .info_02 .info .exp .work_btn {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8AA6ED;
+  cursor: pointer;
+}
+.profile_outer .profile .right_box .info_02 .info .exp .work_btn i {
+  font-size: 12px;
+  margin-right: 5px;
+  transition: all 0.2s;
+}
+.profile_outer .profile .right_box .info_02 .info .exp .work_btn.active i {
+  transform: rotate(180deg);
+}
+.profile_outer .profile .right_box .info_02 .info .exp .work_txt {
+  display: none;
+  background-color: rgba(211, 212, 212, 0.1);
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 15px;
+}
+.profile_outer .profile .right_box .info_02 .info .exp .work_txt > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #D3D4D4;
+  margin-bottom: 10px;
+  font-family: Pretendard;
+}
+.profile_outer .profile .right_box .info_02 .info .exp .work_txt > p:last-child {
+  margin-bottom: 0;
+}
+.profile_outer .profile .right_box .skills > p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #D3D4D4;
+  font-family: "Red Rose", serif;
+  margin-bottom: 30px;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .right_box .skills .skill_box {
+  margin-bottom: 80px;
+}
+.profile_outer .profile .right_box .skills .skill_box:last-child {
+  margin-bottom: 0;
+}
+.profile_outer .profile .right_box .skills .skill_box > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #D3D4D4;
+  margin-bottom: 20px;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div {
+  width: 14.2857142857%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div img {
+  width: 65px;
+  margin: 0 auto;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div .hover_img {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div .sass {
+  width: 70px;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div .react {
+  width: 68px;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div .gsap {
+  width: 80px;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div > p {
+  font-family: "Red Rose", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #D3D4D4;
+  margin-top: 10px;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div .txt {
+  position: absolute;
+  left: 50%;
+  top: 110px;
+  transform: translateX(-50%);
+  background-color: #446DD4;
+  border-radius: 5px;
+  padding: 8px 10px;
+  opacity: 0;
+  display: none;
+  text-align: left;
+  z-index: 2;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div .txt p {
+  font-family: "Red Rose", serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #D3D4D4;
+  letter-spacing: 0.2px;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div .txt span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #D3D4D4;
+  white-space: nowrap;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div .txt::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 9px;
+  background-color: #446DD4;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div:hover .txt {
+  display: block;
+  opacity: 1;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div:hover .normal_img {
+  opacity: 0;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div:hover .hover_img {
+  opacity: 1;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div.gsap {
+  margin-top: 20px;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div.gsap p {
+  margin-top: 0;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div.gsap .txt {
+  top: 100px;
+}
+
+/**************** projects ****************/
+.projects {
+  margin: 70px 0 50px;
+  padding: 130px 0;
+}
+.projects .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.projects .title div {
+  font-family: "Red Rose", serif;
+  letter-spacing: 0.2px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #D3D4D4;
+  margin-bottom: 15px;
+}
+.projects .title p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #D3D4D4;
+}
+.projects .projects_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.projects .projects_logo > div {
+  position: relative;
+  cursor: pointer;
+}
+.projects .projects_logo > div img {
+  transition: all 0.2s;
+}
+.projects .projects_logo > div .before_img {
+  opacity: 1;
+}
+.projects .projects_logo > div .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.projects .projects_logo > div:hover .hover, .projects .projects_logo > div.active .hover {
+  opacity: 1;
+}
+.projects .projects_logo > div:hover .before_img, .projects .projects_logo > div.active .before_img {
+  opacity: 0;
+}
+.projects .projects_logo .mova {
+  width: 92px;
+}
+.projects .projects_logo .better {
+  width: 112px;
+}
+.projects .projects_logo .jeju {
+  width: 128px;
+}
+.projects .projects_logo .hanwha {
+  width: 111px;
+}
+.projects .projects_logo .daiso {
+  width: 107px;
+}
+.projects .projects_logo .line {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(211, 212, 212, 0.3);
+  margin: 0 20px;
+  cursor: default;
+}
+.projects .swiper_outer {
+  position: relative;
+  width: 100%;
+}
+.projects .swiper_outer .mySwiper {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: static;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide {
+  width: 1280px !important;
+  background-color: rgba(211, 212, 212, 0.1);
+  border-radius: 50px;
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt {
+  margin-left: 70px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .span_box {
+  margin-bottom: 20px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .span_box span {
+  font-family: "Red Rose", serif;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #D3D4D4;
+  margin-right: 10px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .slide_logo {
+  margin-bottom: 15px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .slide_logo.mova_d {
+  width: 135px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .slide_logo.better_d {
+  width: 161px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .slide_logo.jeju_d {
+  width: 195px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .slide_logo.hanwha_d {
+  width: 137px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .slide_logo.daiso_d {
+  width: 154px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(211, 212, 212, 0.8);
+  margin-bottom: 30px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .slide_info {
+  font-size: 16px;
+  font-weight: 300;
+  color: #D3D4D4;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .info_box02 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .info_box02 .first {
+  margin-right: 20px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .info_box02 .first p {
+  font-family: "Red Rose", serif;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(211, 212, 212, 0.6);
+  margin-bottom: 17px;
+  margin-top: 2px;
+  line-height: 16px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .info_box02 .second_txt p {
+  font-size: 16px;
+  color: rgba(211, 212, 212, 0.6);
+  margin-bottom: 17px;
+  line-height: 16px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .skill_do {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .skill_do img {
+  width: 25px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .btn_box button {
+  margin-right: 8px;
+  background: none;
+  border: 1px solid #D3D4D4;
+  color: #D3D4D4;
+  border-radius: 30px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Pretendard;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .btn_box button a {
+  color: #D3D4D4;
+  transition: all 0.2s;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .btn_box button:hover {
+  background-color: #D3D4D4;
+  color: #101217;
+  font-weight: 500;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .btn_box button:hover a {
+  color: #101217;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_project {
+  width: 720px;
+  margin-right: 70px;
+  border-radius: 30px;
+}
+.projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_project img {
+  border-radius: 30px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects .swiper_outer .mySwiper .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateX(-50%);
+  color: #D3D4D4;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+.projects .swiper_outer .mySwiper .swiper-button-prev:hover {
+  opacity: 1;
+}
+.projects .swiper_outer .mySwiper .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateX(-50%);
+  color: #D3D4D4;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+.projects .swiper_outer .mySwiper .swiper-button-next:hover {
+  opacity: 1;
+}
+
+/**************** container ****************/
+.container {
+  background: linear-gradient(#101217, #444A57);
+  height: 100%;
+  /**************** contact ****************/
+}
+.container .contact {
+  width: 1280px;
+  margin: 0 auto 130px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.container .contact .contact_txt .hope {
+  font-size: 40px;
+  font-weight: 600;
+  color: #D3D4D4;
+  line-height: 52px;
+  margin-bottom: 30px;
+}
+.container .contact .contact_txt .hope_02 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #D3D4D4;
+  line-height: 26px;
+  margin-bottom: 75px;
+}
+.container .contact .contact_txt p {
+  font-family: "Red Rose", serif;
+  letter-spacing: 0.2px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #D3D4D4;
+  margin-top: 15px;
+}
+.container .contact .contact_clover {
+  display: flex;
+  gap: 50px;
+}
+.container .contact .contact_clover img {
+  width: 50px;
+  opacity: 0.2;
+}
+.container {
+  /**************** footer ****************/
+}
+.container .footer {
+  text-align: center;
+  border-top: 1px solid rgba(211, 212, 212, 0.3);
+  font-family: "Red Rose", serif;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #D3D4D4;
+  padding: 30px 0;
+}/*# sourceMappingURL=main.css.map */
