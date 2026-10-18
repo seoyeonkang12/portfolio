@@ -51,7 +51,7 @@
 
 - `animate()`로 부드러운 섹션 이동 구현
 - `href` 속성으로 메뉴와 섹션 연결
-- `isScrolling`으로 스크롤 이벤트 중복 처리 방지
+- `isScrolling`으로 스크롤 이동 중 활성 메뉴의 중복 변경 방지
 
 ~~~javascript
 let isScrolling = false;
