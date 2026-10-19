@@ -456,6 +456,12 @@
 .profile_outer .profile .right_box .skills .skill_box .skill > div .gsap {
   width: 80px;
 }
+.profile_outer .profile .right_box .skills .skill_box .skill > div.react_z {
+  z-index: 2;
+}
+.profile_outer .profile .right_box .skills .skill_box .skill > div.js {
+  z-index: 2;
+}
 .profile_outer .profile .right_box .skills .skill_box .skill > div > p {
   font-family: "Red Rose", serif;
   font-size: 16px;
@@ -694,17 +700,17 @@
   margin-right: 8px;
   background: none;
   border: 1px solid #D3D4D4;
-  color: #D3D4D4;
   border-radius: 30px;
-  padding: 9px 18px;
-  font-size: 14px;
-  font-weight: 300;
-  font-family: Pretendard;
   cursor: pointer;
   transition: all 0.2s;
 }
 .projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .btn_box button a {
+  display: block;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 300;
   color: #D3D4D4;
+  font-family: Pretendard;
   transition: all 0.2s;
 }
 .projects .swiper_outer .mySwiper .swiper-wrapper .swiper-slide .slide_txt .btn_box button:hover {

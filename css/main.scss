@@ -474,6 +474,10 @@ $black: #101217;
               .sass {width: 70px;}
               .react {width: 68px;}
               .gsap {width: 80px;}
+              
+              &.react_z {z-index: 2;}
+              &.js {z-index: 2;}
+              
               >p {
                 font-family: "Red Rose", serif;
                 font-size: 16px;
@@ -696,18 +700,17 @@ $black: #101217;
                 margin-right: 8px;
                 background: none;
                 border: 1px solid $white;
-                color: $white;
                 border-radius: 30px;
-                // width: 113px; height: 35px;
-                padding: 9px 18px;
-                font-size: 14px;
-                font-weight: 300;
-                font-family: Pretendard;
                 cursor: pointer;
                 transition: all 0.2s;
 
                 a {
+                  display: block;
+                  padding: 9px 18px;
+                  font-size: 14px;
+                  font-weight: 300;
                   color: $white;
+                  font-family: Pretendard;
                   transition: all 0.2s;
                 }
                 &:hover {
