@@ -7,7 +7,7 @@
 
 🔗 [포트폴리오 웹사이트 바로가기](https://seoyeonkang12.github.io/portfolio/)
 
-<img width="1902" height="916" alt="image" src="https://github.com/user-attachments/assets/544d1e7f-88fb-479e-a604-311973f74986" />
+<img width="1902" height="916" alt="image" src="https://github.com/user-attachments/assets/4da6a257-0450-47fc-9c1f-0b28b252fa09" />
 
 ## 📌 프로젝트 개요
 
