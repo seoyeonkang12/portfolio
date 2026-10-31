@@ -7,6 +7,8 @@
 
 🔗 [포트폴리오 웹사이트 바로가기](https://seoyeonkang12.github.io/portfolio/)
 
+<img width="1902" height="916" alt="image" src="https://github.com/user-attachments/assets/544d1e7f-88fb-479e-a604-311973f74986" />
+
 ## 📌 프로젝트 개요
 
 개인 작업물과 기술 역량을 한눈에 확인할 수 있도록 제작한 포트폴리오 웹사이트입니다.  
